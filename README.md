@@ -5,13 +5,13 @@ I created this project to practice writing clean, scalable automation code and t
 https://thinking-tester-contact-list.herokuapp.com/
 
 🛠 Tech Stack
-Java
-Selenium WebDriver
-TestNG
-Maven
-Git & GitHub
-GitHub Actions (CI/CD)
-Page Object Model (POM)
+Java  
+Selenium WebDriver  
+TestNG  
+Maven  
+Git & GitHub  
+GitHub Actions (CI/CD)  
+Page Object Model (POM)  
 
 🧪 Automated Scenarios
 The following end-to-end scenarios are automated:
