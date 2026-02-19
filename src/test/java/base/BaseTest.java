@@ -25,8 +25,9 @@ public class BaseTest {
         driver.get("https://thinking-tester-contact-list.herokuapp.com/");
     }
 
-    @AfterMethod
-    public void tearDown() {
-        driver.quit();
-    }
+    
+//    @AfterMethod
+//    public void tearDown() {
+//        driver.quit();
+//    }
 }
