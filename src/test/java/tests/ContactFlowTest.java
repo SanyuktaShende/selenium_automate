@@ -16,6 +16,7 @@ public class ContactFlowTest extends BaseTest {
         loginPage.login("test@thinkingtester.com", "password123");
         contactList.verifyUserIsOnContactList();
 
+        loginPage.clickSignupIfLoginError();
         contactList.clickAddContact();
         addContact.addNewContact();
 
