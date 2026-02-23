@@ -7,20 +7,28 @@ import pages.*;
 public class ContactFlowTest extends BaseTest {
 
     @Test
-    public void addContactEndToEndTest() {
+    public void addContactEndToEndTest() throws InterruptedException {
 
         LoginPage loginPage = new LoginPage(driver);
         ContactListPage contactList = new ContactListPage(driver);
         AddContactPage addContact = new AddContactPage(driver);
 
         loginPage.login("test@thinkingtester.com", "password123");
-        contactList.verifyUserIsOnContactList();
-
         loginPage.clickSignupIfLoginError();
-        contactList.clickAddContact();
         addContact.addNewContact();
-
+        addContact.emailExistsError();
+        Thread.sleep(1000);
         contactList.verifyUserIsOnContactList();
-        contactList.logout();
+        Thread.sleep(1000);
+
+        contactList.clickAddContact();
+        Thread.sleep(1000);
+
+        
+
+//        loginPage.clickSignupIfLoginError();
+        
+       
+//        contactList.logout();
     }
 }

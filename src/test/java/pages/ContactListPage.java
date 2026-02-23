@@ -19,6 +19,8 @@ public class ContactListPage {
         Assert.assertTrue(driver.findElement(addContactBtn).isDisplayed(),
                 "User is not on Contact List page");
     }
+    
+    
 
     public void clickAddContact() {
         driver.findElement(addContactBtn).click();
