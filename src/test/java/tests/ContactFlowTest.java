@@ -23,7 +23,7 @@ public class ContactFlowTest extends BaseTest {
 
         contactList.clickAddContact();
         Thread.sleep(1000);
-
+        contactList.addDetailForContact();
         
 
 //        loginPage.clickSignupIfLoginError();
