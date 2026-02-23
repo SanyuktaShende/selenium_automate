@@ -11,11 +11,11 @@ public class ContactFlowTest extends BaseTest {
 
         LoginPage loginPage = new LoginPage(driver);
         ContactListPage contactList = new ContactListPage(driver);
-        AddContactPage addContact = new AddContactPage(driver);
+        SignupPage addContact = new SignupPage(driver);
 
         loginPage.login("test@thinkingtester.com", "password123");
         loginPage.clickSignupIfLoginError();
-        addContact.addNewContact();
+        addContact.newSignup();
         addContact.emailExistsError();
         Thread.sleep(1000);
         contactList.verifyUserIsOnContactList();

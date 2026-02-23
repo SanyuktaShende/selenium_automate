@@ -8,7 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class AddContactPage {
+public class SignupPage {
 
     private WebDriver driver;
     private WebDriverWait wait;
@@ -20,12 +20,12 @@ public class AddContactPage {
 	private By erroremail = By.xpath("//*[contains(text(),'Email address is already in use')]");
 
 
-    public AddContactPage(WebDriver driver) {
+    public SignupPage(WebDriver driver) {
         this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
-    public void addNewContact() {
+    public void newSignup() {
         driver.findElement(firstName).sendKeys("Test");
         driver.findElement(lastName).sendKeys("User");
         driver.findElement(email).sendKeys("testuser@email.com");
