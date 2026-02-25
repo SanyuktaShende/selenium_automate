@@ -40,13 +40,13 @@ public class ContactListPage {
     }
 
     public void addDetailForContact() {
-    	driver.findElement(firstName).sendKeys("Tyla");
+    	driver.findElement(firstName).sendKeys("Tyfyfla");
     	driver.findElement(lastName).sendKeys("Guther");
     	driver.findElement(birthdate).sendKeys("2001-09-29");
-    	driver.findElement(email).sendKeys("tyla@gmail.com");
+    	driver.findElement(email).sendKeys("tygyga@gmail.com");
     	driver.findElement(phone).sendKeys("198474622");
     	driver.findElement(street1).sendKeys("kjlekjlkjlr");
-    	driver.findElement(street2).sendKeys("iweriuoirewru");
+    	driver.findElement(street2).sendKeys("iwhhhuoirewru");
     	driver.findElement(city).sendKeys("Newyork");   
     	driver.findElement(stateProvince).sendKeys("USA");
     	driver.findElement(postalCode).sendKeys("2930");

@@ -42,7 +42,7 @@ public class SignupPage {
 
             if (errorMsg.isDisplayed()) {
             	driver.findElement(email).clear();
-            	driver.findElement(email).sendKeys("Billmnm@email.com");
+            	driver.findElement(email).sendKeys("prhhh@email.com");
             	 driver.findElement(submitBtn).click();
             }
 

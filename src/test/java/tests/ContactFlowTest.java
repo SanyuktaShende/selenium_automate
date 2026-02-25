@@ -29,6 +29,6 @@ public class ContactFlowTest extends BaseTest {
 //        loginPage.clickSignupIfLoginError();
         
        
-//        contactList.logout();
+        contactList.logout();
     }
 }
